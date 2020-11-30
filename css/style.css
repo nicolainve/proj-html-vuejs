@@ -3,12 +3,74 @@ body {
     font-family: 'Khula', sans-serif;
 }
 
+/* TYPOGRAPHY */
+h1 {
+    font-weight: 700;
+    color: #fff;
+}
+
 /* LAYOUT */
 .container {
     max-width: 1170px;
 }
 
+/* UTILITIES */
+
+/* Buttons */
+.btn-primary {
+    padding: 15px 40px;
+    font-weight: 700;
+    background: #20ad96;
+    border: none;
+}
+
+
 /* HEADER */
+
+.main-header {
+    background-color: #1f1f52;
+    height: 680px; /* DEBUG */
+}
+
+/* Navbar */
 .navbar .navbar-brand img {
     width: 150px;
+}
+
+/* Jumbotron */
+.jumbotron .col.illustration {
+    max-width: 750px;
+    position: relative;
+}
+
+.jumbotron .illustration .graphic {
+    position: relative;
+    border: 20px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.jumbotron .illustration .youtube {
+    position: absolute;
+    width: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jumbotron .illustration .left-person {
+    position: absolute;
+    top: -20px;
+    left: -330px;
+    z-index: 0;
+    width: 380px;
+}
+
+.jumbotron .illustration .right-person {
+    position: absolute;
+    bottom: -50px;
+    right: -240px;
+    z-index: 0;
+    width: 200px;
 }
