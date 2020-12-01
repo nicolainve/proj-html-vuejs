@@ -102,3 +102,17 @@ section.container {
     font-size: 48px;
     font-weight: 700;
 }
+
+/* Services */
+.services .row.box .col-6 {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.services .row.box .col-6:nth-child(even) {
+    margin-top: 40px;
+}
+
+.services h5 {
+    color: #3f3a64;
+    font-weight: 700;
+}
