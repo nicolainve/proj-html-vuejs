@@ -145,3 +145,12 @@ section {
 .main-footer .social li {
     display: inline-block;
 }
+
+.main-footer ul.explore {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-footer ul.explore li {
+    width: 50%;
+}

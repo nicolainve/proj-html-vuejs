@@ -36,6 +36,10 @@ const app = new Vue({
             {
                 class: 'fas fa-shopping-cart',
             }
-            ]
+        ],
+        mail: 'support@maxcoach.com',
+        socials: ['fab fa-facebook-square', 'fab fa-twitter', 'fab fa-instagram', 'fab fa-linkedin'],
+        exploreMenu: ['Start here', 'Success story', 'Blog', 'Courses', 'About us', 'Contact us'],
+        informationMenu: ['Membership', 'Purchase guide', 'Privacy policy', 'Terms of services']
     }
 });
