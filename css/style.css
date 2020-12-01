@@ -127,3 +127,8 @@ section {
 .courses img {
     width: 100px;
 }
+
+/* Blogs */
+.blogs {
+    background: #f5f7fa;
+}
