@@ -1,12 +1,26 @@
 /* GENERAL */
 body {
     font-family: 'Khula', sans-serif;
+    margin-bottom: 100px; /* DEBUG */
 }
 
 /* TYPOGRAPHY */
 h1 {
+    font-size: 46px;
     font-weight: 700;
     color: #fff;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 /* LAYOUT */
@@ -29,7 +43,6 @@ h1 {
 
 .main-header {
     background-color: #1f1f52;
-    height: 680px; /* DEBUG */
 }
 
 /* Navbar */
@@ -38,9 +51,13 @@ h1 {
 }
 
 /* Jumbotron */
-.jumbotron .col.illustration {
-    max-width: 750px;
+.jumbotron {
+    margin-bottom: 150px;
+}
+
+.jumbotron .row.illustration {
     position: relative;
+    top: 150px;
 }
 
 .jumbotron .illustration .graphic {
