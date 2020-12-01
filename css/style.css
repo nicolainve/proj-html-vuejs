@@ -28,7 +28,7 @@ h4 {
     max-width: 1170px;
 }
 
-section.container {
+section {
     padding: 50px 0;
 }
 
@@ -40,6 +40,8 @@ section.container {
     font-weight: 700;
     background: #20ad96;
     border: none;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -115,4 +117,13 @@ section.container {
 .services h5 {
     color: #3f3a64;
     font-weight: 700;
+}
+
+/* Courses */
+.courses {
+    background: #f5f7fa;
+}
+
+.courses img {
+    width: 100px;
 }
