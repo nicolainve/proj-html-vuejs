@@ -27,6 +27,10 @@ ul {
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* LAYOUT */
 .container {
     max-width: 1170px;
@@ -110,12 +114,40 @@ section {
 }
 
 /* Services */
-.services .row.box .col-6 {
+.services .row.box .col {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    flex-basis: calc(100% / 2 - 60px);
+    padding: 20px 30px;
+    height: 370px;
 }
 
-.services .row.box .col-6:nth-child(even) {
+.services .row.box .col:nth-child(even) {
     margin-top: 40px;
+    margin-left: 30px;
+}
+
+.services .row.box .col:nth-child(1) {
+    background-image: url(../img/home-6-service-image-01.png);
+    background-repeat: no-repeat;
+    background-position: 2px bottom;
+}
+
+.services .row.box .col:nth-child(2) {
+    background-image: url(../img/home-6-service-image-02.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.services .row.box .col:nth-child(3) {
+    background-image: url(../img/home-6-service-image-03.png);
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+}
+
+.services .row.box .col:nth-child(4) {
+    background-image: url(../img/home-6-service-image-04.png);
+    background-repeat: no-repeat;
+    background-position: center 10px;
 }
 
 .services h5 {
@@ -128,13 +160,68 @@ section {
     background: #f5f7fa;
 }
 
-.courses img {
-    width: 100px;
+.courses .row .col-6 {
+    margin: 30px 0;
+}
+
+.courses .row .image {
+    background-position: center center;
+    background-size: 170%;
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.courses .row .col-6:nth-child(1) .image {
+    background-image: url('../img/course-02-480x298.jpg');
+}
+
+.courses .row .col-6:nth-child(2) .image {
+    background-image: url('../img/stock-full-hd-03-480x298.jpg');
+}
+
+.courses .row .col-6:nth-child(3) .image {
+    background-image: url('../img/stock-full-hd-04-480x298.jpg');
+}
+
+.courses .row .col-6:nth-child(4) .image {
+    background-image: url('../img/stock-full-hd-06-480x298.jpg');
+}
+
+.courses .row .col-6:nth-child(5) .image {
+    background-image: url('../img/course-featured-image-01-480x298.jpg');
+}
+
+.courses .row .col-6:nth-child(6) .image {
+    background-image: url('../img/stock-full-hd-05-480x298.jpg');
+}
+
+/* References */
+.references img {
+    border-radius: 50%;
 }
 
 /* Blogs */
 .blogs {
     background: #f5f7fa;
+}
+
+.blogs .col {
+    flex-basis: calc(100% / 3);
+}
+
+.blogs img {
+    border-radius: 5px;
+}
+
+/* Features */
+.features {
+    background-image: url('../img/home-6-services-image.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 800px;
 }
 
 /* FOOTER */
@@ -144,6 +231,10 @@ section {
 
 .main-footer .social li {
     display: inline-block;
+}
+
+.main-footer li {
+    line-height: 2;
 }
 
 .main-footer ul.explore {
