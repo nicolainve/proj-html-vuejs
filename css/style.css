@@ -5,7 +5,7 @@ body {
 
 /* TYPOGRAPHY */
 h1 {
-    font-size: 46px;
+    font-size: 48px;
     font-weight: 700;
     color: #fff;
 }
@@ -52,26 +52,35 @@ section {
     margin: 0 auto;
 }
 
+.bg-primary {
+    background: #f5f7fa !important;
+}
 
 /* HEADER */
 
 .main-header {
     background-color: #1f1f52;
+    height: 100vh;
+    margin-bottom: 150px;
 }
 
 /* Navbar */
+.navbar {
+    padding: 1rem 0rem;
+}
+
 .navbar .navbar-brand img {
-    width: 150px;
+    width: 160px;
 }
 
 /* Jumbotron */
 .jumbotron {
-    margin-bottom: 150px;
+    padding: 5rem 0 0 0;
 }
 
 .jumbotron .row.illustration {
     position: relative;
-    top: 150px;
+    top: 90px;
 }
 
 .jumbotron .illustration .graphic {
@@ -88,6 +97,7 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .jumbotron .illustration .left-person {
@@ -100,8 +110,8 @@ section {
 
 .jumbotron .illustration .right-person {
     position: absolute;
-    bottom: -50px;
-    right: -240px;
+    bottom: -110px;
+    right: -190px;
     z-index: 0;
     width: 200px;
 }
@@ -119,6 +129,7 @@ section {
     flex-basis: calc(100% / 2 - 60px);
     padding: 20px 30px;
     height: 370px;
+    border-radius: 5px;
 }
 
 .services .row.box .col:nth-child(even) {
@@ -156,10 +167,6 @@ section {
 }
 
 /* Courses */
-.courses {
-    background: #f5f7fa;
-}
-
 .courses .row .col-6 {
     margin: 30px 0;
 }
@@ -204,10 +211,6 @@ section {
 }
 
 /* Blogs */
-.blogs {
-    background: #f5f7fa;
-}
-
 .blogs .col {
     flex-basis: calc(100% / 3);
 }
@@ -225,10 +228,6 @@ section {
 }
 
 /* FOOTER */
-.main-footer {
-    background: #f5f7fa;
-}
-
 .main-footer .social li {
     display: inline-block;
 }

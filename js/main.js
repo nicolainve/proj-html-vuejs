@@ -31,10 +31,10 @@ const app = new Vue({
                 dropdown: 'fas fa-angle-down',
             },
             {
-                class: 'fas fa-user-circle',
+                class: 'fas fa-shopping-cart',
             },
             {
-                class: 'fas fa-shopping-cart',
+                class: 'fas fa-user-circle',
             }
         ],
         mail: 'support@maxcoach.com',
