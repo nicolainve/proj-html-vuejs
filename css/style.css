@@ -1,7 +1,6 @@
 /* GENERAL */
 body {
     font-family: 'Khula', sans-serif;
-    margin-bottom: 100px; /* DEBUG */
 }
 
 /* TYPOGRAPHY */
@@ -21,6 +20,11 @@ h4 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 /* LAYOUT */
@@ -131,4 +135,13 @@ section {
 /* Blogs */
 .blogs {
     background: #f5f7fa;
+}
+
+/* FOOTER */
+.main-footer {
+    background: #f5f7fa;
+}
+
+.main-footer .social li {
+    display: inline-block;
 }
