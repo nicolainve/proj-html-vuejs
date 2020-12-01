@@ -26,6 +26,7 @@ h4 {
 /* LAYOUT */
 .container {
     max-width: 1170px;
+    padding: 50px 0;
 }
 
 /* UTILITIES */
@@ -90,4 +91,11 @@ h4 {
     right: -240px;
     z-index: 0;
     width: 200px;
+}
+
+/* Analitics */
+.analitics h3 {
+    color: #20ad96;
+    font-size: 48px;
+    font-weight: 700;
 }
