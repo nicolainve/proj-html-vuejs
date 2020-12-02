@@ -22,29 +22,31 @@
         <!-- Header -->
         <header class="main-header container-fluid">
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark container">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/light-logo.png" alt="MaxCoach" class="logo">
-                </a>
-
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li
-                        v-for='link in navbarHeader'
-                        class="nav-item ml-3"
-                        >
-                        <a class="nav-link text-white" href="#">
-                            {{ link.text }}
-                            <i :class="link.dropdown + ' fa-xs'"></i>
-                            <i :class="link.class"></i>
-                        </a>
-                      </li>
-                    </ul>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/light-logo.png" alt="MaxCoach" class="logo">
+                    </a>
+    
+                    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li
+                            v-for='link in navbarHeader'
+                            class="nav-item ml-3"
+                            >
+                            <a class="nav-link" href="#">
+                                {{ link.text }}
+                                <i :class="link.dropdown + ' fa-xs'"></i>
+                                <i :class="link.class"></i>
+                            </a>
+                          </li>
+                        </ul>
+                    </div>
+    
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+                    </form>
                 </div>
-
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
-                </form>
             </nav>
             
             <!-- Jumbotron -->
@@ -130,24 +132,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 right">
                         <h6>Together We Can Create</h6>
-                        <h2>Services We Can Provide For My Clients.</h2>
+                        <h2>Services We <span>Can Provide</span> For My Clients.</h2>
                         <ul>
                             <li>
-                                Select & customize courses to your preferences
+                                <i class="fas fa-check"></i>Select & customize courses to your preferences
                             </li>
                             <li>
-                                Change the tutor and make arrangements
+                                <i class="fas fa-check"></i>Change the tutor and make arrangements
                             </li>
                             <li>
-                                Participate in events to join others
+                                <i class="fas fa-check"></i>Participate in events to join others
                             </li>
                             <li>
-                                Get the desired certificate delivered at house
+                               <i class="fas fa-check"></i>Get the desired certificate delivered at house
                             </li>
                         </ul>
-                        <button class="btn btn-primary">Get started for free</button>
+                        <button class="btn btn-secondary d-inline">Get started for free</button>
                     </div>
                 </div>
             </section>
@@ -156,7 +158,7 @@
             <section class="courses bg-primary text-center">
                 <div class="container">
                     <h6>Choose a course to get started</h6>
-                    <h2>Latest Featured Courses</h2>
+                    <h2>Latest Featured <span>Courses</span></h2>
                     <div class="row text-left">
                         <div class="col-6 d-flex align-items-center">
                             <div class="image"></div>
@@ -214,14 +216,14 @@
                         </div>
                         
                     </div>
-                    <button class="btn btn-primary">View all courses <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn btn-secondary">View all courses <i class="fas fa-arrow-right"></i></button>
                 </div>
             </section>
 
             <!-- References -->
             <section class="references container">
-                <h2 class="text-center">Why People Talk About MaxCoach?</h2>
-                <div class="row">
+                <h2 class="text-center mb-5">Why People Talk About <span>MaxCoach</span>?</h2>
+                <div class="row mb-5">
                     <div class="col-4 text-center">
                         <img src="./img/testimonial-avata-02.jpg" alt="">
                     </div>
@@ -245,7 +247,7 @@
             <section class="blogs bg-primary">
                 <div class="container text-center">
                     <h6>Enjoy reading on maxCoach</h6>
-                    <h2>Latest on Our Blogs</h2>
+                    <h2>Latest on <span>Our Blogs</span></h2>
                     <div class="row text-left">
                         <div class="col">
                             <img src="./img/artist-blog-03-480x325.jpeg" alt="">
@@ -276,25 +278,25 @@
             <section class="features">
                 <div class="container text-center">
                     <h6>Wanna transform your life?</h6>
-                    <h2>Glad to Help You Learn</h2>
+                    <h2>Glad to <span>Help You</span> Learn</h2>
                     <div class="row text-left">
                         <div class="col-3">
-                            <i class="fas fa-flag fa-2x"></i>
+                            <i class="fas fa-flag"></i>
                             <h5>Idea Discussion</h5>
                             <p>Get teamed up with the specialists who work and teach coding for years at famous universities.</p>
                         </div>
                         <div class="col-3">
-                            <i class="fas fa-cog fa-2x"></i>
+                            <i class="fas fa-cog"></i>
                             <h5>Web Development</h5>
                             <p>Learn to start building a webpage from scratch. You decide your own pace, course and speed.</p>
                         </div>
                         <div class="col-3">
-                            <i class="fas fa-life-ring fa-2x"></i>
+                            <i class="fas fa-life-ring"></i>
                             <h5>System Administration</h5>
                             <p>Learners are encouraged to study the mechanism and structure of system administration.</p>
                         </div>
                         <div class="col-3">
-                            <i class="fas fa-desktop fa-2x"></i>
+                            <i class="fas fa-desktop"></i>
                             <h5>Graphic Design</h5>
                             <p>Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.</p>
                         </div>
@@ -304,9 +306,9 @@
 
             <!-- Get started -->
             <section class="get-started text-center">
-                <h4>Start today for getting Online Certification</h4>
-                <h3>You can be your own guiding star with our help!</h3>
-                <button class="btn btn-primary">Get started now</button>
+                <h4>Start today for getting <span>Online Certification</span></h4>
+                <h2>You can be your own guiding star with our help!</h2>
+                <button class="btn btn-secondary">Get started now</button>
             </section>
         </main>
 
@@ -318,9 +320,11 @@
                     <div class="row">
                         <div class="col-6">
                             <h6>Address</h6>
-                            <p>382 NE 191st St # 87394 Miami, FL 33179-3899</p>
-                            <p>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</p>
-                            <a :href="`mailto:${mail}`">{{ mail }}</a>
+                            <address>
+                                382 NE 191st St # 87394 Miami, FL 33179-3899<br>
+                                +1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)<br>
+                                <a :href="`mailto:${mail}`">{{ mail }}</a>
+                            </address>
                             <ul class="social">
                                 <li v-for="social in socials">
                                     <a href="#"><i :class="social"></i></a>

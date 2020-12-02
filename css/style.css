@@ -11,15 +11,31 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 700;
     line-height: 1.5;
+}
+
+h2 span {
+    font-weight: 400;
+    color: #20ad96;
 }
 
 h4 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+h4 span {
+    font-weight: 400;
+    color: #20ad96;
+}
+
+h6 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #696969;
 }
 
 ul {
@@ -31,13 +47,22 @@ img {
     max-width: 100%;
 }
 
+a {
+    color: #696969;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #20ad96;
+}
+
 /* LAYOUT */
 .container {
     max-width: 1170px;
 }
 
 section {
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 /* UTILITIES */
@@ -52,6 +77,27 @@ section {
     margin: 0 auto;
 }
 
+.btn-primary:hover {
+    color: #20ad96;
+    background: #fff;
+    border: 0;
+}
+
+.btn-secondary {
+    padding: 15px 40px;
+    font-weight: 700;
+    background: #20ad96;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background: #3f3a64;
+    border: 0;
+}
+
 .bg-primary {
     background: #f5f7fa !important;
 }
@@ -62,11 +108,21 @@ section {
     background-color: #1f1f52;
     height: 100vh;
     margin-bottom: 150px;
+    padding-top: 80px;
 }
 
 /* Navbar */
 .navbar {
     padding: 1rem 0rem;
+    background-color: #1f1f52;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #20ad96;
 }
 
 .navbar .navbar-brand img {
@@ -116,6 +172,14 @@ section {
     width: 200px;
 }
 
+/* Quote */
+.quote h3 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.5;
+}
+
 /* Analytics */
 .analytics h3 {
     color: #20ad96;
@@ -161,14 +225,36 @@ section {
     background-position: center 10px;
 }
 
+.services .col-6.right {
+    padding: 0 100px;
+}
+
 .services h5 {
     color: #3f3a64;
     font-weight: 700;
 }
 
+.services ul li {
+    line-height: 2.5;
+    color: #696969;
+}
+
+.services ul i {
+    margin-right: 20px;
+    color: #20ad96;
+}
+
 /* Courses */
 .courses .row .col-6 {
-    margin: 30px 0;
+    margin: 20px 0;
+    padding: 10px 10px;
+    transition: .1s;
+    border-radius: 5px;
+}
+
+.courses .row .col-6:hover {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .courses .row .image {
@@ -205,9 +291,28 @@ section {
     background-image: url('../img/stock-full-hd-05-480x298.jpg');
 }
 
+.courses .row span {
+    font-size: .9rem;
+    color: #696969;
+}
+
+.courses .row span i {
+    margin-right: .3rem;
+}
+
+.courses .row span:last-child i {
+    margin-left: 2rem;
+}
+
 /* References */
 .references img {
     border-radius: 50%;
+}
+
+.references p {
+    font-size: 30px;
+    font-weight: 500;
+    color: #696969;
 }
 
 /* Blogs */
@@ -217,6 +322,26 @@ section {
 
 .blogs img {
     border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.blogs h4 {
+    margin-bottom: 1rem;
+    text-transform: none;
+    font-size: 23px;
+}
+
+.blogs .row span {
+    font-size: .9rem;
+    color: #696969;
+}
+
+.blogs .row span i {
+    margin-right: .3rem;
+}
+
+.blogs .row span:last-child i {
+    margin-left: 2rem;
 }
 
 /* Features */
@@ -224,16 +349,52 @@ section {
     background-image: url('../img/home-6-services-image.png');
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 800px;
+    height: 900px;
+}
+
+.features h2 {
+    margin-bottom: 80px;
+}
+
+.features i {
+    font-size: 50px;
+    margin-bottom: 1.5rem;
+}
+
+.features h5 {
+    font-weight: 600;
+}
+
+/* Get-started */
+.get-started h4 {
+    text-transform: none;
+    font-size: 23px;
+    font-weight: 600;
 }
 
 /* FOOTER */
+.main-footer h6 {
+    color: #333;
+    text-transform: none;
+    font-size: 20px;
+}
+
 .main-footer .social li {
     display: inline-block;
+    margin-right: 2rem;
+    font-size: 25px;
+}
+
+.main-footer .social li a {
+    color: #696969;
+}
+
+.main-footer .social li a:hover {
+    color: #20ad96;
 }
 
 .main-footer li {
-    line-height: 2;
+    line-height: 2.5;
 }
 
 .main-footer ul.explore {
@@ -243,4 +404,9 @@ section {
 
 .main-footer ul.explore li {
     width: 50%;
+}
+
+.main-footer address {
+    line-height: 2.5;
+    color: #696969;
 }
