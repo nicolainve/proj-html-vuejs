@@ -106,7 +106,6 @@ section {
 
 .main-header {
     background-color: #1f1f52;
-    height: 100vh;
     margin-bottom: 150px;
     padding-top: 80px;
 }
@@ -127,6 +126,29 @@ section {
 
 .navbar .navbar-brand img {
     width: 160px;
+}
+
+.navbar input {
+    height: 45px;
+    padding: 0 20px;
+}
+
+.form-inline .form-control {
+	display: inline-block;
+	width: 180px;
+	vertical-align: middle;
+}
+
+.form-inline {
+    position: relative;
+}
+
+.form-inline .fa-search {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #20ad96;
 }
 
 /* Jumbotron */
@@ -154,6 +176,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    cursor: pointer;
 }
 
 .jumbotron .illustration .left-person {
@@ -248,7 +271,7 @@ section {
 .courses .row .col-6 {
     margin: 20px 0;
     padding: 10px 10px;
-    transition: .1s;
+    transition: .05s;
     border-radius: 5px;
 }
 
@@ -289,6 +312,19 @@ section {
 
 .courses .row .col-6:nth-child(6) .image {
     background-image: url('../img/stock-full-hd-05-480x298.jpg');
+}
+
+.courses h3 {
+    color: #20ad96;
+}
+
+.courses h3 small.decimal {
+   font-size: 1rem;
+   color: #20ad96;
+}
+
+.courses h6 {
+    cursor: pointer;
 }
 
 .courses .row span {
@@ -409,4 +445,32 @@ section {
 .main-footer address {
     line-height: 2.5;
     color: #696969;
+}
+
+/* Fixed Menu */
+aside {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    background: #fff;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%);
+    overflow: hidden;
+    width: 35px;
+    align-items: center;
+}
+
+aside i {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+aside i:hover {
+    background: rgba(0, 0, 0, 0.3);
 }
